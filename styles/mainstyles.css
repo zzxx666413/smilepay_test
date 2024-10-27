@@ -1,0 +1,150 @@
+* {
+    padding:0;
+    margin:0;
+}
+/* 設定表單的最上方主選單 */
+header {
+    background-color: #231C1A;  /*設定所有 header 標籤的背景顏色為深灰色 */
+    height:80px; /*頁首的高度設成80像素*/
+    width:100%; /*寬度設成100%與視窗同寬*/
+}
+
+h1 {
+    color: white; /*設定所有 h1 標籤的文字顏色為白色*/
+    position:absolute; /*絕對定位模式*/
+    left:120px; /*距離頁首左邊緣120px*/
+    top:0; 
+    line-height:80px;
+}
+
+header ul {
+      position:absolute; /*絕對定位模式*/
+      right:5vw; /*距離頁首右邊緣5vw*/
+      top:0; /*上邊緣為0*/
+      line-height:80px; /*將導覽列的文字置中於頁首，可以加大文字的行距，使行距等於頁首的高度*/
+}
+header li {
+      display:inline; /*讓導覽列變成橫式的排列*/
+      margin-right:4vw; /*相對單位vw(4vw代表的是視窗寬度的4%)*/
+}
+header a {
+    color: white;          /*設定在 header 標籤內的連結 (a 標籤) 的樣式文字顏色為白色*/
+    text-decoration: none; /*去除連結底下的底線裝飾*/
+}
+
+header a:hover { 
+    text-decoration: underline; /* 當滑鼠移到 header 標籤內的連結上時，增加底線裝飾*/
+}
+
+/* 設定商品的部分 */
+.shop {
+    background-color: #f7ecc3;
+    display:flex; /* 使用flexbox布局 */
+}
+
+.shop img {
+    width:30%;
+}
+.info {
+    width:70%;
+    background-color: white;
+    display:flex;
+    flex-direction:column; /* 如要變成縱向堆疊，可以在CSS中指明dlex的方向為column(欄) */
+    align-items: center; /* 水平對齊為中央 */
+    justify-content: center; /* 垂直對齊為中央 */
+}
+.info h2 {
+    font-size:40px;
+    margin-bottom: 30px;
+}
+.info p {
+    text-align: center;
+    line-height: 2em; /* 設定段落文字的行高 */
+}
+
+/* 商品展示區 */
+.product-container {
+    background-color: #ede9db;
+    padding: 60px 20px; /* 上下內邊距60px，左右內邊距20px */
+}
+
+.section-title {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px; /* 下方邊距40px */
+    color: #231C1A;
+}
+
+.product {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid; /* 使用網格布局 */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* 自適應列數，每列最小280px */
+    gap: 30px; /* 網格間距30px */
+    padding: 20px;
+}
+
+.product-card {
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 陰影效果 */
+    transition: transform 0.3s ease; /* 過渡動畫效果，持續0.3秒 */
+}
+
+.product-card:hover {
+    transform: translateY(-5px); /* 懸停時向上移動5px */
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* 填滿指定區域 */
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+.product-card h3 {
+    font-size: 20px;
+    margin: 12px 0;
+    color: #231C1A;
+}
+
+.product-card .price {
+    font-size: 18px;
+    font-weight: bold; /* 粗體字 */
+    color: #e74c3c;
+    margin: 8px 0;
+}
+
+.product-card .description {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 16px;
+}
+
+.button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background-color: #231C1A;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer; /* 滑鼠指針變為手型 */
+    transition: background-color 0.3s ease; /* 背景顏色過渡動畫 */
+}
+
+.button:hover {
+    background-color: #3e332f;
+}
+
+/* 設定表單的最下方的部分 */
+footer {
+    background-color:#000000;
+    color:#B7B7B7;
+    height:60px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}

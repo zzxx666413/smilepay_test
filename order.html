@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>訂購表單</title>
+    <link href="styles/order_styles.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <!-- 表單設計 -->
+    <div class="form-container">
+        <h1>訂購表單</h1>
+        <form id="order" onsubmit="return validateForm()">
+            <div class="form-group">
+                <label for="name">姓名:</label>
+                <input type="text" id="name" name="name" class="input-field">
+            </div>
+
+            <div class="form-group">
+                <label for="phone">聯絡電話:</label>
+                <input type="text" id="phone" name="phone" class="input-field">
+            </div>
+
+            <div class="form-group">
+                <label for="address">地址:</label>
+                <input type="text" id="address" name="address" class="input-field">
+            </div>
+
+            <div class="form-group">
+                <label for="product">產品名稱:</label>
+                <input type="text" id="product" name="product" class="input-field" readonly>
+            </div>
+
+            <div class="form-group">
+                <label for="quantity">數量:</label>
+                <input type="number" id="quantity" name="quantity" min="1" value="1" class="input-field">
+            </div>
+
+            <button type="submit" class="submit-btn">提交訂單</button>
+        </form>
+    </div>
+    <script src="scripts/main.js"></script>
+</body>
+</html>

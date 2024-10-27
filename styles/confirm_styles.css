@@ -1,0 +1,68 @@
+/* 控制整個確認表單的容器 */
+.confirm-container {
+    max-width: 600px; /* 設定最大寬度為600px */
+    margin: 50px auto;         
+    padding: 20px;             
+    background-color: white;   
+    border-radius: 8px; /* 圓角效果 */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);  /* 添加陰影效果 */
+}
+
+/* 標題樣式：控制"訂單確認"標題 */
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* 訂單詳細資訊區塊：包含所有詳細資訊項目的容器 */
+.order-details {
+    margin-bottom: 30px;
+}
+
+/* 各個詳細資訊項目的樣式：控制姓名、電話、地址等每一行的外觀 */
+.detail-item {
+    display: flex;            
+    margin-bottom: 15px;    
+    padding: 10px;            
+    background-color: #f8f9fa; 
+    border-radius: 4px;  /* 圓角效果 */
+}
+
+/* 標籤樣式：控制"訂購人姓名:"等標籤文字 */
+.detail-item label {
+    width: 120px; /* 固定寬度120px */
+    font-weight: bold; /* 文字粗體 */
+    color: #555;
+}
+
+/* 內容樣式：控制實際顯示的資訊文字 */
+.detail-item span {
+    flex: 1; /* 佔用剩餘空間 */
+}
+
+/* 總金額樣式 */
+.total {
+    background-color: #e9ecef; 
+    font-size: 1.2em; /* 文字放大1.2倍 */
+    font-weight: bold; /* 文字粗體 */
+}
+
+/* "確定訂購"按鈕 */
+.confirm-btn {
+    display: block; /* 區塊級顯示 */
+    width: 200px;
+    margin: 20px auto;
+    padding: 12px;
+    background-color: #28a745; 
+    color: white;
+    border: none; /* 移除邊框 */
+    border-radius: 4px; /* 圓角效果 */
+    font-size: 1.1em; /* 文字放大1.1倍 */
+    cursor: pointer; /* 滑鼠指針變為手型 */
+}
+
+/* 按鈕懸停效果：當滑鼠移到按鈕上時的樣式 */
+.confirm-btn:hover {
+    background-color: #218838;  /* 滑鼠懸停時變為深綠色 */
+}

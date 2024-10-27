@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>訂單確認</title>
+    <link href="styles/confirm_styles.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <!-- 表單設計 -->
+    <div class="confirm-container">
+        <h1>訂單確認</h1>
+        <div class="order-details">
+            <div class="detail-item">
+                <label>訂購人姓名:</label>
+                <span id="confirm-name"></span>
+            </div>
+            <div class="detail-item">
+                <label>聯絡電話:</label>
+                <span id="confirm-phone"></span>
+            </div>
+            <div class="detail-item">
+                <label>寄送地址:</label>
+                <span id="confirm-address"></span>
+            </div>
+            <div class="detail-item">
+                <label>產品名稱:</label>
+                <span id="confirm-product"></span>
+            </div>
+            <div class="detail-item">
+                <label>訂購數量:</label>
+                <span id="confirm-quantity"></span>
+            </div>
+            <div class="detail-item total">
+                <label>總金額:</label>
+                <span id="confirm-total"></span>
+            </div>
+        </div>
+        <button id="confirm-order" class="confirm-btn">確定訂購</button>
+    </div>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
